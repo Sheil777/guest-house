@@ -1,12 +1,20 @@
-/*
+new AirDatepicker('.main__calendar', {
+    selectedDates: [, ,Date.now()]
+})
+new AirDatepicker('.main__calendar2', {
+    selectedDates: [, ,Date.now()]
+})
+
+// Бургер
 $(document).ready(
     function(){
-        $('.header__burger').click(
+        $('.burger').click(
             function (event) {
-                $('div.header__burger').toggleClass('header__burger_close');
-                $('nav.header__menu').toggleClass('header__menu_phone');
+                $('div.burger').toggleClass('burger_close');
+                $('.header__menu').toggleClass('menu_phone');
+                $('.menu__list').toggleClass('menu_phone');
+                $('.header__social').toggleClass('menu_phone');
             }
         );
     }
 );
-*/

@@ -30,7 +30,13 @@
                         </div>
                     </div>
                 </div>
+                <a href="" class="header__logo_phone">
+                    <span>Valentina <br/> Guest House</span>
+                </a>
                 <nav class="header__menu">
+                    <div class="burger">
+                        <span></span>
+                    </div>
                     <a href="" class="header__logo">
                         <span>Valentina <br/> Guest House</span>
                     </a>
@@ -51,11 +57,50 @@
                             <a href="" class="menu__link">Полный пансон</a>
                         </li>
                     </ul>
-                    <div class="header__social"></div>
+                    <div class="header__social">
+                        <a href="#"><img src="/template/img/main/icons/social/telegram.svg" alt=""></a>
+                        <a href="#"><img src="/template/img/main/icons/social/whatsapp.svg" alt=""></a>
+                        <a href="#"><img src="/template/img/main/icons/social/facebook.svg" alt=""></a>
+                        <a href="#"><img src="/template/img/main/icons/social/vk.svg" alt=""></a>
+                        <a href="#"><img src="/template/img/main/icons/social/o.svg" alt=""></a>
+                    </div>
                 </nav>
             </div>
         </header>
+        
+        <div class="main">
+            <div class="main__background"><img src="template/img/main/main-image.png" alt=""></div>
+            <div class="main__container _container">
+                <form class="main__window">
+                    <div class="main__column">
+                        <p>Даты заезда</p>
+                        <div class="main__input">
+                            <input type="text" class="main__calendar">
+                            <img src="template/img/main/icons/calendar.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="main__column">
+                        <p>Даты выезда</p>
+                        <div class="main__input">
+                            <input type="text" placeholder="06-04-2021" class="main__calendar2">
+                            <img src="template/img/main/icons/calendar.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="main__column">
+                        <p>Гостей</p>
+                        <div class="main__input">
+                            <input type="number" placeholder="2" min="1" value="2">
+                            <img src="template/img/main/icons/human.svg" alt="" class="main__icon">
+                        </div>
+                    </div>
+                    <div class="main__button">
+                        <input type="submit" value="Проверить" />
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+    <script src="node_modules/air-datepicker/air-datepicker.js"></script>
     <script src="template/js/jquery-3.6.0.min.js"></script>
     <script src="template/js/scripts.js"></script>
 </body>

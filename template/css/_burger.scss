@@ -1,8 +1,6 @@
-@media (max-width: 850px) {}
-
-<div class="burger">
-    <span></span>
-</div>
+$burger-width: 45px;
+$burger-height: 30px;
+$burger-height-line: $burger-height / 6;
 
 .burger {
     display: none;
@@ -66,5 +64,4 @@
         display: block;
     }
 }
-
 
