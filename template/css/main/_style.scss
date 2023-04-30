@@ -196,7 +196,7 @@
         top: 0;
         left: -120vh;
         transition: 0.5s;
-        
+        z-index: 12;
 
         &.menu_phone {
             left: 0;
@@ -229,7 +229,8 @@
         color: #585858;
         background: white;
         position: relative;
-        z-index: 10;
+        z-index: 14;
+        text-align: center;
     }
 }
 
@@ -295,6 +296,8 @@
     height: 36px;
 
     input {
+        position: relative;
+        z-index: 5;
         padding-left: 15px;
         width: 100%;
         height: inherit;
@@ -329,6 +332,8 @@
 }
 
 .main__button {
+    margin-top: 24px;
+
     input {
         width: 140px;
         height: 36px;
@@ -346,7 +351,67 @@
         &:hover {
             cursor: pointer;
         }
+    }   
+}
+
+@media (max-width: 1100px) {
+    .main {
+        &__window {
+            width: 700px;
+            flex-wrap: wrap;
+            height: 200px;
+            padding: 20px 0;
+            box-sizing: border-box;
+        }
+
+        &__button {
+            width: 262px;       
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .main {
+        height: auto;
+
+        &__container {
+            display: block;
+            padding: 0;
+        }
+
+        &__background {
+            top: 70px;
+        }
+
+        &__window {
+            width: 100%;
+            height: auto;
+        }
+
+        &__column {
+            margin-bottom: 10px;
+        }
+
+        &__button {
+            margin-top: 12px;
+        }
     }
 
-    
 }
+
+@media (max-width: 580px) {
+    .main{
+        &__window {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        &__button {
+            text-align: center;
+        }
+    }
+}
+
+
+/* Rooms */
+

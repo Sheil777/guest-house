@@ -4,12 +4,12 @@ $burger-height-line: $burger-height / 6;
 
 .burger {
     display: none;
-    position: fixed;
+    position: absolute;
     width: $burger-width;
     height: $burger-height;
     top: 26px;
     left: 22px;
-    z-index: 10;
+    z-index: 15;
 
     span, &::before, &::after {
         display: block;
@@ -40,7 +40,7 @@ $burger-height-line: $burger-height / 6;
 }
 
 .burger_close {
-    z-index: 10;
+    z-index: 15;
 
     & span {
         /* transform: rotate(45deg); */
