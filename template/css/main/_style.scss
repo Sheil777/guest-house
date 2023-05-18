@@ -415,3 +415,64 @@
 
 /* Rooms */
 
+.rooms {
+    &__header {
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        color: #585858;
+    }
+
+    &__items {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        position: relative;
+        height: 300px;
+        width: 600px;
+
+        img {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: left;
+            z-index: -1;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 0;
+        height: 50%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.1);
+    }
+}
+
+.room-text__header {
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+.room-text__description {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-left: 35px;
+    margin-top: 20px;
+}
