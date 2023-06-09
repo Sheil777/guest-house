@@ -7,6 +7,12 @@
     font-size: 12px;
     font-weight: 400;
 
+    &__left {
+        .header-contacts__text1 {
+            margin-top: 2px;
+        }
+    }
+
     &__right {
         display: flex;
     }
@@ -373,6 +379,7 @@
 @media (max-width: 750px) {
     .main {
         height: auto;
+        margin-bottom: 30px;
 
         &__container {
             display: block;
@@ -386,6 +393,7 @@
         &__window {
             width: 100%;
             height: auto;
+            box-shadow: none;
         }
 
         &__column {
@@ -457,6 +465,10 @@
         width: 100%;
         background-color: rgba(0,0,0,0.1);
     }
+
+    &__button {
+        display: none;
+    }
 }
 
 @media (max-width: 1040px) {
@@ -506,18 +518,19 @@
             border-radius: 30px;
             overflow: hidden;
             height: auto;
-            box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.5);
             margin: 15px;
 
             img {
                 position: unset;
-                height: 50vw;
+                height: 40vw;
             }
 
             .rooms__text {
                 position: unset;
                 background-color: unset;
                 padding: 15px;
+                width: auto;
 
                 .room-text__header {
                     font-weight: 600;
@@ -527,9 +540,34 @@
                 }
 
                 .room-text__description {
-                    color: #585858;
                     margin-left: 0;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2.8vw;
+                    line-height: 3.5vw;
+
+                    color: #585858;
                 }
+            }
+        }
+        &__button {
+            display: block;
+            width: 22vw;
+            height: 6vw;
+            background: #FFB23F;
+            border-radius: 12vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 20px;
+
+            a {
+                font-weight: 500;
+                font-size: 2.5vw;
+                line-height: 15px;
+                color: #FFFFFF;
+
             }
         }
     }
