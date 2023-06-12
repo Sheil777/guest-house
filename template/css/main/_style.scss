@@ -574,3 +574,40 @@
         }
     }
 }
+
+
+/* About */
+.about {
+    margin-top: 80px;
+
+    &__container {
+    }
+
+    &__header {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+
+        color: #585858;
+        text-align: center;
+    }
+
+    &__body {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    &__img {        
+        flex: 0 0 388px;
+        height: 267px;
+        margin-right: 37px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #777777;
+    }
+}

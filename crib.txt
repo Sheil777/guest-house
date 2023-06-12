@@ -68,3 +68,9 @@
 }
 
 
+В популярном фреймворке разработчиков Bootstrap сейчас представлено шесть брейкпоинтов: 1920, 1200, 992, 768, 576 и 376 пикселей.
+@media (max-width: 1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+@media (max-width: 576px) {}
+@media (max-width: 376px) {}
