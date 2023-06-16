@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="template/css/style.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
     <title>Valentina Guest House</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,18 +103,20 @@
 
         <div class="rooms">
             <div class="rooms__container _container">
-                <div class="rooms__header">Наши номера</div>
+                <div class="section-header">Наши номера</div>
                 <div class="rooms__items">
                     <div class="rooms__item">
                         <img src="template/img/main/rooms/1.jpg">
                         <div class="rooms__text">
-                            <span class="room-text__header">2-х местный</span>
-                            <div class="room-text__description">
-                                - Площадь номера: 11 м2 <br />
-                                - 1 двуспальная кровать или 2 односпальные кровати <br />
-                                - Кондиционер <br />
-                                - Интернет <br />
-                                - Телевизор
+                            <div>
+                                <span class="room-text__header">2-х местный</span>
+                                <div class="room-text__description">
+                                    - Площадь номера: 11 м2 <br />
+                                    - 1 двуспальная кровать или 2 односпальные кровати <br />
+                                    - Кондиционер <br />
+                                    - Интернет <br />
+                                    - Телевизор
+                                </div>
                             </div>
                             <div class="rooms__button">
                                 <a href=#>Подробнее</a>
@@ -123,41 +126,56 @@
                     <div class="rooms__item">
                         <img src="template/img/main/rooms/2.jpg">
                         <div class="rooms__text">
-                            <span class="room-text__header">Семейный</span>
-                            <div class="room-text__description">
-                                - Площадь номера: 18 м2 <br />
-                                - 1 двуспальная кровать или 1 односпальная кровать <br />
-                                - Кондиционер <br />
-                                - Интернет <br />
-                                - Телевизор
+                            <div>
+                                <span class="room-text__header">Семейный</span>
+                                <div class="room-text__description">
+                                    - Площадь номера: 18 м2 <br />
+                                    - 1 двуспальная кровать или 1 односпальная кровать <br />
+                                    - Кондиционер <br />
+                                    - Интернет <br />
+                                    - Телевизор
+                                </div>
+                            </div>
+                            <div class="rooms__button">
+                                <a href=#>Подробнее</a>
                             </div>
                         </div>
                     </div>
                     <div class="rooms__item">
                         <img src="template/img/main/rooms/3.jpg">
                         <div class="rooms__text">
-                            <span class="room-text__header">Deluxe</span>
-                            <div class="room-text__description">
-                                - Площадь номера: 30 м2 <br />
-                                - 1 двуспальная кровать или 1 раскладной диван <br />
-                                - Кондиционер <br />
-                                - Интернет <br />
-                                - Телевизор <br />
-                                - 2 комнаты
+                            <div>
+                                <span class="room-text__header">Deluxe</span>
+                                <div class="room-text__description">
+                                    - Площадь номера: 30 м2 <br />
+                                    - 1 двуспальная кровать или 1 раскладной диван <br />
+                                    - Кондиционер <br />
+                                    - Интернет <br />
+                                    - Телевизор <br />
+                                    - 2 комнаты
+                                </div>
+                            </div>
+                            <div class="rooms__button">
+                                <a href=#>Подробнее</a>
                             </div>
                         </div>
                     </div>
                     <div class="rooms__item">
                         <img src="template/img/main/rooms/4.jpg">
                         <div class="rooms__text">
-                            <span class="room-text__header">Deluxe Plus</span>
-                            <div class="room-text__description">
-                                - Площадь номера: 45 м2 <br />
-                                - 2 односпальные кровати, 1 двуспальная кровать, 1 диван <br />
-                                - Кондиционер <br />
-                                - Интернет <br />
-                                - Телевизор <br />
-                                - 3 комнаты
+                            <div>
+                                <span class="room-text__header">Deluxe Plus</span>
+                                <div class="room-text__description">
+                                    - Площадь номера: 45 м2 <br />
+                                    - 2 односпальные кровати, 1 двуспальная кровать, 1 диван <br />
+                                    - Кондиционер <br />
+                                    - Интернет <br />
+                                    - Телевизор <br />
+                                    - 3 комнаты
+                                </div>
+                            </div>
+                            <div class="rooms__button">
+                                <a href=#>Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -167,7 +185,7 @@
 
         <section class="about">
             <div class="about__container _container">
-                <div class="about__header">ГОСТЕВОЙ ДОМ «Valentina Guest House» , Абхазия </div>
+                <div class="section-header about__header"><span>ГОСТЕВОЙ ДОМ</span> «Valentina Guest House» , Абхазия </div>
                 <div class="about__body">
                     <div class="about__img _ibg">
                         <img src="template/img/main/about.jpg" alt="">
@@ -181,9 +199,56 @@
                 </div>
             </div>
         </section>
+
+        <section class="feedback">
+            <div class="feedback__container _container">
+                <div class="section-header">Отзывы о нас</div>
+                <div class="feedback__slider">
+                    <div class="swiper feedback__slider-1">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="feedback__area">
+                                    <div class="feedback__text">Все было прекрасно! Отличный номер, уютный и комфортный; в номере чисто, все в рабочем состоянии!</div>
+                                    <div class="feedback__nick">Vera</div>
+                                    <div class="feedback__decoration"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="feedback__area">
+                                    <div class="feedback__text">Все было прекрасно! </div>
+                                    <div class="feedback__nick">Olya</div>
+                                </div></div>
+                            <div class="swiper-slide">
+                                <div class="feedback__area">
+                                    <div class="feedback__text">Комментарий 3</div>
+                                    <div class="feedback__nick">Masha</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            ...
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        
+                        <div class="swiper-scrollbar"></div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
     </div>
     <script src="node_modules/air-datepicker/air-datepicker.js"></script>
     <script src="template/js/jquery-3.6.0.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="template/js/scripts.js"></script>
 </body>
 </html>

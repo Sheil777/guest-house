@@ -54,10 +54,30 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: left;
-     object-position: left;
 }
 
+.section-header {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #585858;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 980px) {
+  .section-header {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .section-header {
+    font-size: 4.5vw;
+    margin-bottom: 18px;
+    line-height: 0;
+  }
+}
 /* ----------------------------------- */
 body {
   font-family: "Montserrat";
@@ -73,6 +93,7 @@ body {
   font-weight: 400;
 }
 .header-contacts__left .header-contacts__text1 {
+  display: inline-block;
   margin-top: 2px;
 }
 .header-contacts__right {
@@ -406,16 +427,6 @@ body {
   }
 }
 /* Rooms */
-.rooms__header {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 37px;
-  color: #585858;
-}
 .rooms__items {
   display: flex;
   gap: 20px;
@@ -440,9 +451,9 @@ body {
 .rooms__text {
   position: absolute;
   bottom: 0;
-  height: 50%;
+  height: 55%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .rooms__button {
   display: none;
@@ -477,9 +488,6 @@ body {
   .rooms__container {
     padding: 0;
   }
-  .rooms__header {
-    margin-bottom: 25px;
-  }
   .rooms__items {
     flex-wrap: nowrap;
     overflow-y: auto;
@@ -487,7 +495,7 @@ body {
   }
   .rooms__item {
     flex: 0 0 88%;
-    border-radius: 30px;
+    border-radius: 10px;
     overflow: hidden;
     height: auto;
     box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.5);
@@ -500,13 +508,18 @@ body {
   .rooms__item .rooms__text {
     position: unset;
     background-color: unset;
-    padding: 15px;
+    padding: 5vw;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
   }
   .rooms__item .rooms__text .room-text__header {
     font-weight: 600;
     margin: 0;
     line-height: 22px;
+    font-size: 4.5vw;
     color: #585858;
   }
   .rooms__item .rooms__text .room-text__description {
@@ -515,6 +528,7 @@ body {
     font-weight: 400;
     font-size: 2.8vw;
     line-height: 3.5vw;
+    margin-top: 2vw;
     color: #585858;
   }
   .rooms__button {
@@ -527,7 +541,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 1.5vw;
   }
   .rooms__button a {
     font-weight: 500;
@@ -540,16 +554,9 @@ body {
 .about {
   margin-top: 80px;
 }
-.about__header {
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 37px;
-  color: #585858;
-  text-align: center;
-}
 .about__body {
   display: flex;
-  margin-top: 40px;
+  align-items: center;
 }
 .about__img {
   flex: 0 0 388px;
@@ -561,6 +568,67 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #777777;
+}
+
+@media (max-width: 992px) {
+  .about__header {
+    line-height: 6vw;
+  }
+  .about__header span {
+    display: block;
+  }
+  .about__body {
+    flex-direction: column;
+  }
+  .about__img {
+    border-radius: 50%;
+    overflow: hidden;
+    flex: auto;
+    width: 40vw;
+    height: 40vw;
+    margin-right: 0;
+    margin-bottom: 4vw;
+  }
+  .about__text {
+    text-align: center;
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+}
+/* Feedback */
+.feedback__container {
+  padding: 0;
+}
+.feedback__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.feedback__nick {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.feedback__slider-1 {
+  margin-bottom: 200px;
+}
+.feedback__slider-1 .swiper-slide {
+  background: #3F8CFF;
+  box-shadow: 0px 2px 60px rgba(63, 140, 255, 0.5);
+  border-radius: 10px;
+  position: relative;
+}
+.feedback__slider-1 .swiper-slide .feedback__decoration {
+  position: absolute;
+  bottom: -30px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
 }
 
 .burger {

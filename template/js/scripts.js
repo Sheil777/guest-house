@@ -18,3 +18,9 @@ $(document).ready(
         );
     }
 );
+
+// Слайдер отзывов
+const swiper = new Swiper('.feedback__slider-1', {
+    speed: 400,
+    spaceBetween: 50,
+});
