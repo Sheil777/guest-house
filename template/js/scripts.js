@@ -20,7 +20,25 @@ $(document).ready(
 );
 
 // Слайдер отзывов
-const swiper = new Swiper('.feedback__slider-1', {
+
+const slider2 = new Swiper('.feedback__slider-2', {
     speed: 400,
     spaceBetween: 50,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+});
+
+const slider1 = new Swiper('.feedback__slider-1', {
+    speed: 400,
+    spaceBetween: 50,
+    thumbs: {
+        swiper: slider2,
+        slidesPreView: 1,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
 });
