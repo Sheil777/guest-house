@@ -60,10 +60,10 @@
                     </ul>
                     <div class="header__social">
                         <a href="#"><img src="/template/img/main/icons/social/telegram.svg" alt=""></a>
-                        <a href="#"><img src="/template/img/main/icons/social/whatsapp.svg" alt=""></a>
-                        <a href="#"><img src="/template/img/main/icons/social/facebook.svg" alt=""></a>
-                        <a href="#"><img src="/template/img/main/icons/social/vk.svg" alt=""></a>
-                        <a href="#"><img src="/template/img/main/icons/social/o.svg" alt=""></a>
+                        <a href="#"><img src="/template/img/main/icons/social/whatsapp.png" alt=""></a>
+                        <a href="#"><img src="/template/img/main/icons/social/facebook.png" alt=""></a>
+                        <a href="#"><img src="/template/img/main/icons/social/vk.png" alt=""></a>
+                        <a href="#"><img src="/template/img/main/icons/social/o.png" alt=""></a>
                     </div>
                 </nav>
             </div>
@@ -90,7 +90,13 @@
                     <div class="main__column">
                         <p>Гостей</p>
                         <div class="main__input">
-                            <input type="number" placeholder="2" min="1" value="2">
+                            <!-- <input type="number" placeholder="2" min="1" value="2"> -->
+                            <select name="" id="">
+                                <option value="">1 гость</option>
+                                <option value="">2 гостя</option>
+                                <option value="">3 гостя</option>
+                                <option value="">4 гостя</option>
+                            </select>
                             <img src="template/img/main/icons/human.svg" alt="" class="main__icon">
                         </div>
                     </div>
@@ -237,12 +243,12 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="feedback__avatar">
+                                <div class="feedback__avatar _ibg">
                                     <img src="template/img/avatars/avatar-2.png" alt="avatar">
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="feedback__avatar">
+                                <div class="feedback__avatar _ibg">
                                     <img src="template/img/avatars/avatar-3.png" alt="avatar">
                                 </div>
                             </div>
@@ -252,10 +258,76 @@
                 </div>
             </div>
         </section>
+
+        <footer class="footer">
+            <div class="footer__top footer-top">
+                <div class="footer-top__container  _container">
+                    <div class="footer__location">
+                        <div class="footer__header">Геолокация</div>
+                        <div class="footer__map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992.1336444581245!2d40.06227255704315!3d43.380042018374766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f5934406d96d1d%3A0x7a90ca81fc12307a!2s492%20October%20St%2C%20Gantiadi!5e0!3m2!1sru!2sru!4v1688472310394!5m2!1sru!2sru" width="245px" height="173px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__header">Контакты</div>
+                        <div class="footer-contacts__item">
+                            <div class="footer-contacts__icon _ibg">
+                                <img src="./template/img/main/icons/footer/phone.svg" alt="">
+                            </div>
+                            <div class="footer__text">8 (862) 279-56-89</div>
+                        </div>
+                        <div class="footer-contacts__item">
+                            <div class="footer-contacts__icon _ibg">
+                                <img src="./template/img/main/icons/footer/home.svg" alt="">
+                            </div>
+                            <div class="footer__text">Абхазия, Цандрыпш</div>
+                        </div>
+                        <div class="footer-contacts__item">
+                            <div class="footer-contacts__icon _ibg">
+                                <img src="./template/img/main/icons/footer/location.svg" alt="">
+                            </div>
+                            <div class="footer__text">ул.Октябрьская, д.492</div>
+                        </div>
+                        <div class="footer-contacts__item">
+                            <div class="footer-contacts__icon _ibg">
+                                <img src="./template/img/main/icons/footer/mail.svg" alt="">
+                            </div>
+                            <div class="footer__text">booking@valentinahouse.ru</div>
+                        </div>
+                    </div>
+                    <div class="footer__info">
+                        <div class="footer__header">Информация</div>
+                        <div class="footer__text">Заезд: с 16:00</div>
+                        <div class="footer__text">Выезд: до 12:00</div>
+                        <div class="footer__text">Бесплатный WI_FI</div>
+                        <div class="footer__text">Бесплатная парковка</div>
+                        <div class="footer__text"><a href="">О нас</a></div>
+                        <div class="footer__text"><a href="">Условия бронирования</a></div>
+                        <div class="footer__text"><a href="">Политика конфиденциальности</a></div>
+                    </div>
+                    <div class="footer__wheather">
+                        <div class="footer__header">Погода</div>
+                        <div class="footer__text">Яндекс.Погода: +17</div>
+                        <div class="footer__social">
+                            <a href=""><img src="./template/img/main/icons/footer/social/facebook.svg" alt=""></a>
+                            <a href=""><img src="./template/img/main/icons/footer/social/vk.svg" alt=""></a>
+                            <a href=""><img src="./template/img/main/icons/footer/social/o.svg" alt=""></a>
+                            <a href=""><img src="./template/img/main/icons/footer/social/telegram.svg" alt=""></a>
+                            <a href=""><img src="./template/img/main/icons/footer/social/whatsapp.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom footer-bottom">
+                <div class="footer-bottom__container _container">
+                    <div class="footer__text">© 2015–2021 – VALENTINA GUEST HOUSE</div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <script src="node_modules/air-datepicker/air-datepicker.js"></script>
-    <script src="template/js/jquery-3.6.0.min.js"></script>
-    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
-    <script src="template/js/scripts.js"></script>
+    <script src="./node_modules/air-datepicker/air-datepicker.js"></script>
+    <script src="./template/js/jquery-3.6.0.min.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./template/js/scripts.js"></script>
 </body>
 </html>

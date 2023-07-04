@@ -10,7 +10,8 @@
     &__left {
         .header-contacts__text1 {
             display: inline-block;
-            margin-top: 2px;
+            margin-top: 3px;
+            margin-left: 3px;
         }
     }
 
@@ -302,7 +303,7 @@
     width: 260px;
     height: 36px;
 
-    input {
+    input, select {
         position: relative;
         z-index: 5;
         padding-left: 15px;
@@ -315,6 +316,7 @@
         line-height: 17px;
         color: #777777;
         box-sizing: border-box;
+        appearance: none;
     }
 
     img {
@@ -630,7 +632,7 @@
 /* Feedback */
 
 .feedback {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 
     .section-header {
         margin-bottom: 0;
@@ -706,5 +708,88 @@
         height: 80px;
         width: 80px;
         margin: 0 auto;
+    }
+}
+
+/* Footer */
+
+.footer {
+
+    &__location {
+    }
+
+    &__map {
+    }
+
+    &__contacts {
+    }
+
+    &__header {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: white;
+        font-size: 14px;
+        line-height: 180%;
+
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+
+    &__info {
+    }
+
+    &__wheather {
+    }
+
+    &__social {
+        margin-top: 20px;
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.footer-top {
+    background-color: #777777;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer-contacts {
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-left: -30px;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+
+        img {
+            object-fit: none;
+        }
+    }
+}
+.footer-bottom {
+    background-color: #626262;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+
+    &__container {
     }
 }

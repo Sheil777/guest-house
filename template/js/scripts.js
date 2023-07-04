@@ -24,6 +24,8 @@ $(document).ready(
 const slider2 = new Swiper('.feedback__slider-2', {
     speed: 400,
     spaceBetween: 50,
+    effect: 'fade',
+    allowTouchMove: false,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
