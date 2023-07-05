@@ -44,3 +44,10 @@ const slider1 = new Swiper('.feedback__slider-1', {
       prevEl: '.swiper-button-prev',
     },
 });
+
+// Кастомный select
+const select = document.querySelector('.main__select');
+const choices = new Choices(select, {
+    searchEnabled: false,
+    itemSelectText: ""
+})

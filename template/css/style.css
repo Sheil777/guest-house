@@ -773,4 +773,36 @@ body {
   .burger {
     display: block;
   }
+}
+.choices__inner {
+  background: #FAFAFA;
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  width: 260px;
+  min-height: 20px;
+}
+.choices__placeholder {
+  opacity: 1;
+}
+.choices__list--dropdown {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.choices__item--choice {
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.choices[data-type*=select-one]::after {
+  height: 16px;
+  width: 16px;
+  margin-top: -8px;
+  border: none;
+  background: url("../../../template/img/main/icons/human.png") no-repeat;
+  z-index: 3;
+}
+
+.is-open .choices__inner {
+  border-radius: 10px;
+}
+.is-open .choices__list {
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
